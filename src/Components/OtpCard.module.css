@@ -1,0 +1,69 @@
+.container {
+    height: fit-content;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    border-radius: 5%;
+    /* border: 1px solid red; */
+}
+.container h1 {
+    padding: 35px 10px 10px 10px;
+    font-weight: 600;
+}
+.inputbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    /* row-gap: 20px; */
+    /* position: relative; */
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    padding: 8px 12px;
+    background-color: rgb(245, 239, 239);
+    border-radius: 6px;
+    transition: border 0.3s ease-in-out;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.inputWrapper input {
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: rgb(245, 239, 239);
+    font-size: 16px;
+    outline: none;
+}
+.inputWrapper:focus-within {
+    border: 2px solid #e70039;
+}
+.inputWrapper input::-webkit-inner-spin-button,
+.inputWrapper input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.sendOtp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    padding-top: 15px;
+}
+.sendOtp button {
+    font-size: 14px;
+    background-color: #e70039;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px 50px;
+    color: white;
+    cursor: pointer;
+}

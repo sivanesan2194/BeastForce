@@ -1,0 +1,16 @@
+.viewregister{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}

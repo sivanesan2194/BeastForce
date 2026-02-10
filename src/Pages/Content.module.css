@@ -1,0 +1,29 @@
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.container{
+    display: flex;
+}
+.asidebar{
+    width: 20vw;
+    height: 90vh;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+.content{
+    width: 80vw;
+    height: 90vh;
+    overflow: hidden;
+}
+
+@media (max-width:786px) {
+    .asidebar{
+        width: 0vw;
+    }
+    .content{
+        width: 100vw;
+    }
+}

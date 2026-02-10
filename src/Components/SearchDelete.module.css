@@ -1,0 +1,57 @@
+.container{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px 10px 0px 0px;
+    /* border: 1px solid blue; */
+}
+.header{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rebeccapurple; */
+}
+.search{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: white;
+    /* border: 2px solid black; */
+}
+.search:focus-within{
+    border: 2px solid #e70039;
+}
+.search input{
+    padding: 3px 10px;
+    outline: none;
+    border: 2px solid white;
+}
+.delete{
+    width: 100%;
+    height: fit-content;
+    padding: 0px 25px 5px 25px;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    column-gap: 10px;
+    /* border: 1px solid red; */
+}
+.delete button{
+    padding: 3px 5px;
+    background-color: white;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+}
+.deletebtn{
+    color: #e70039;
+}
+.delete input{
+    width: 15px;
+}

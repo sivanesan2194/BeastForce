@@ -1,0 +1,78 @@
+/* This is the full-screen overlay */
+.dashboard {
+    position: fixed; /* Stays in place when scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* This creates the transparent dimmed background */
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* High z-index ensures it sits on top of everything */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+/* This is the actual white dialog box */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #fff; /* Solid background for the box itself */
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    text-align: center;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.textcontent {
+    width: 60%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textcontent p {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.buttonbox {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  /* border: 1px solid black; */
+}
+
+/* Optional: Basic styling for buttons */
+.buttonbox button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonbox button:first-child {
+  background-color: rgb(9, 2, 86); /* Delete color */
+  color: white;
+}
+
+.buttonbox button:last-child {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Simple animation for smooth appearance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

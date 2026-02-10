@@ -1,0 +1,51 @@
+.datatable {
+    margin: 0px 25px;
+    overflow: scroll;
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: none;
+    /* border: 1px solid black;   */
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-bottom: 33px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    text-align: center;
+    border-spacing: 0px 5px;
+}
+
+thead {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+th,
+td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    /* width: fit-content; */
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px solid black;   */
+}
+.wrapper p{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: fantasy;
+}

@@ -1,0 +1,191 @@
+.viewcard{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    /* border: 1px solid red; */
+}
+.card{
+    width: 80%;
+    height: 85%;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* row-gap: 10px; */
+    /* border: 1px solid violet; */
+}
+.header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.header p{
+    font-size: 16px;
+}
+.backbtn{
+    cursor: pointer;
+}
+.backbtn:hover{
+    opacity: 0.8;
+}
+.backbtn button{
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.profile{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.profile h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+.photo,.photo img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+.content1{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.agebox,.genderbox,.contactbox,.citybox,.durationbox,.jdatebox,.expiredbox,.edatebox{
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    font-weight: 400;   
+    /* border: 1px solid black; */
+}
+.title{
+    color: rgb(104, 104, 104);
+}
+.content1 span{
+    width: 5px;
+    height: 40px;
+    border-radius: 250px;
+    background-color: rgb(205, 204, 204);
+}
+.content2{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.durationbox,.jdatebox,.expiredbox,.edatebox{
+    row-gap: 10px;
+    text-align: center;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: 3px solid rgb(205, 204, 204);
+}
+.btn{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    padding: 0px 45px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.btn button{
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: white;
+    padding: 0px 35px;
+    border: 3px solid rgb(205, 204, 204);
+    border-radius: 10px;
+}
+
+.editName {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+@media (max-width:1157px) {
+    .card{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        box-sizing: border-box;
+        overflow: scroll;
+        gap: 20px;
+    }
+    .profile{
+        height: fit-content;
+    }
+    .content1{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20%;
+        row-gap: 10px;
+    }
+    .content1 span{
+        height: 0px;
+        width: 0px;
+    }
+    .agebox,.genderbox,.contactbox,.citybox{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .content2{
+        width: 80%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .durationbox,.jdatebox,.expiredbox,.edatebox{
+        width: 60%;
+    }
+    .btn{
+        padding: 10px 0px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,105 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* border: 1px solid black; */
+}
+.forbtns{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.3);
+}
+.fortable{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0,0.3);
+    overflow: hidden;
+    padding: 0px 0px 0px 25px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.newuser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    padding: 2.5vh 3vw;
+    background-color: rgb(9, 2, 86);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newuser button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.userico{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.btn2{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    padding: 0px 10px;
+    /* border: 1px solid black; */
+}
+.btn2 p{
+    cursor: pointer;
+    padding: 2.5vh 8vw;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+.expiringbtn{
+    background-color: rgb(15, 186, 15);
+    color: white;
+}
+.expiredbtn{
+    background-color: #e70039;
+    color: white;
+}
+.expiringbtns{
+    background-color: white;
+    color: rgb(15, 186, 15);
+    border-bottom: 3px solid rgb(15, 186, 15);
+}
+.expiredbtns{
+    background-color: white;
+    color: #e70039;
+    border-bottom: 3px solid #e70039;
+}
+.fortable p{
+    padding: 6px 0px;
+}
+.tablebox{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}

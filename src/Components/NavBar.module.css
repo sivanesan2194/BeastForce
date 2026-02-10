@@ -1,0 +1,21 @@
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+}
+.menuicon{
+    display: none;
+    font-size: 24px;
+    padding: 32px 0px 0px 50px;
+    /* border: 2px solid black; */
+}
+.logo{
+    padding: 20px 0px 0px 50px;
+    /* border: 2px solid black; */
+}
+@media (max-width:786px) {
+    .menuicon{
+        display: block;
+    }
+}

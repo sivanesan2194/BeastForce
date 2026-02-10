@@ -1,0 +1,51 @@
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/HomePageBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+.Herosection{
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.herocontent h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.quote {
+    width: 380px;
+    font-style: italic;
+    margin: 25px 0px;
+    color: white;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #e70039;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.contact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 25px;
+}

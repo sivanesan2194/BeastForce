@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.ico{
+    font-size:xx-large;
+    color: #e70039;
+}
