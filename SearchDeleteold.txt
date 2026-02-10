@@ -1,0 +1,62 @@
+import { useState } from "react"
+import style from "./SearchDelete.module.css"
+import { FaSearch,FaArrowDown  } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+import { Messagebox } from "./Messagebox";
+
+export const SearchDelete=()=>{
+    const [ipData,setIpData]=useState("");
+    const handleChange=(e)=>{
+        setIpData(e.target.value);
+        console.log(ipData);
+    }
+    const [isDelete,setIsDelete]=useState(false);
+    const [showDeleteDialog,setShowDeleteDialog]=useState(false);
+    const [showDownloadDialog,setShowDownloadDialog]=useState(false);
+
+    const handleTrashClick=()=>{
+        if(!isDelete){
+            setIsDelete(true);
+        }
+        else{
+            setShowDeleteDialog(true);
+        }
+    }
+    const handleDelete=()=>{
+        setShowDeleteDialog(false);
+        setIsDelete(false);
+        console.log("Deleted!");
+        
+    }
+    const handleDownload=()=>{
+        setShowDownloadDialog(false);
+        console.log("Downloaded !");
+    }
+    const handleCancel=()=>{
+        setShowDeleteDialog(false);
+        setShowDownloadDialog(false);
+        console.log("Canceled!");
+    }
+    return(
+        <>
+            {showDeleteDialog && <Messagebox onConfirm={handleDelete} onCancel={handleCancel} onText="Are you sure want to delete ?"/>}
+            {showDownloadDialog && <Messagebox onConfirm={handleDownload} onCancel={handleCancel} onText="Are you sure want to download ?"/>}
+            <div className={style.container}>
+                <div className={style.header}>
+                    <div className={style.content}>
+                        <p>View Registered</p>
+                    </div>
+                    <div className={style.search}>
+                        <FaSearch/>
+                        <input type="text" onChange={handleChange} value={ipData} placeholder="Search"/>
+                    </div>
+                </div>
+                <div className={style.delete}>
+                    {isDelete && <input type="checkbox" />}
+                    <button onClick={handleTrashClick}><MdDelete className={style.deletebtn}/></button>
+                    <button onClick={()=>setShowDownloadDialog(true)}><FaArrowDown/></button>
+                </div>
+            </div>
+        </>
+    )
+}
