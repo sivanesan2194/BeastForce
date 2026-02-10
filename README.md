@@ -1,12 +1,54 @@
-# React + Vite
+# 🏋️ Gym Management Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **Gym Management Web Application** built to manage gym members efficiently through a modern admin dashboard. The system allows administrators to register members, track membership status, manage renewals, upload profile images, perform bulk actions, and export data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 🔹 Admin Dashboard
+- View all registered gym members
+- Separate views for **Expired** and **Expiring (within 3 days)** accounts
+- Search and filter members in real time
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔹 Member Management
+- Register new members with complete details
+- Upload and store **profile images**
+- Track joining date, expiry date, payment method, and coach type
+
+### 🔹 Bulk Actions
+- Select individual or multiple members
+- **Bulk delete** members with confirmation
+- Select-all functionality
+
+### 🔹 Data Export
+- Download member data as **CSV / Excel**
+- Export filtered or selected records
+
+### 🔹 User Experience
+- Responsive UI
+- Confirmation dialogs for delete and download actions
+- Clean and modular component-based architecture
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+- **React**
+- JavaScript (ES6+)
+- CSS Modules
+- Axios
+- React Icons
+- React Router
+
+### Backend
+- **Python (FastAPI)**
+- RESTful APIs
+- Uvicorn Server
+
+### Database
+- **MariaDB (MySQL)** Using Xampp
+
+---
+
