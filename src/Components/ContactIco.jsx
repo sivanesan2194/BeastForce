@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./COntactIco.module.css";
+import style from "./ContactIco.module.css";
 
 export const ContactIco = ({tagname:Icon}) => {
   return (
@@ -10,3 +10,4 @@ export const ContactIco = ({tagname:Icon}) => {
     </>
   )
 }
+
