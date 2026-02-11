@@ -16,7 +16,7 @@ export const UserRegisterForm = ({handleBack}) => {
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try{
-            const response=await axios.post("http://127.0.0.1:8000/register",formData);
+            const response=await axios.post("https://beast-force-backend.vercel.app/register",formData);
             console.log(response);
             alert("User Registered Successfully");
             setFormData(initalState);

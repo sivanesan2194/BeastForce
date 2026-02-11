@@ -79,7 +79,7 @@ export const ViewRegister = () => {
     // 🔹 Delete Selected
     const handleDelete = async () => {
         try {
-            const response = await axios.post("http://127.0.0.1:8000/users/delete", { ids: selectedIds });
+            const response = await axios.post("https://beast-force-backend.vercel.app/users/delete", { ids: selectedIds });
             setTableData((prev) =>
                 prev.filter((row) => !selectedIds.includes(row.id))
             );
@@ -93,7 +93,7 @@ export const ViewRegister = () => {
     };
 
     const get_data_api = async () => {
-        const user_data = await axios.get("http://127.0.0.1:8000/users");
+        const user_data = await axios.get("https://beast-force-backend.vercel.app/users");
         setTableData(user_data.data.Data);
         // console.log(user_data.data.Data);
     }

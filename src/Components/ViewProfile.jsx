@@ -12,7 +12,7 @@ export const ViewProfile = () => {
 
     const [userDetails,setUserDetails]=useState(null);
     const fetchUser=async()=>{
-        const user_data = await axios.get(`http://127.0.0.1:8000/users/${id}`);
+        const user_data = await axios.get(`https://beast-force-backend.vercel.app/users/${id}`);
         setUserDetails(user_data.data.Data);
     }
     useEffect(()=>{
@@ -24,7 +24,7 @@ export const ViewProfile = () => {
 
     const handleSave=async()=>{
         try{
-        const response = await axios.put(`http://127.0.0.1:8000/users/${id}`,userDetails);
+        const response = await axios.put(`https://beast-force-backend.vercel.app/users/${id}`,userDetails);
         alert("Profile Updated Successfully");
         console.log(response);
         setIsEdit(false);

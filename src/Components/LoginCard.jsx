@@ -16,7 +16,7 @@ export const LoginCard = ({ setActiveCard }) => {
         { placeholder: "Password", type: "password", value: "Password", Icon: FaLock },
     ];
     const get_user_details = async () => {
-        const user_data = await axios.get("http://127.0.0.1:8000/users");
+        const user_data = await axios.get("https://beast-force-backend.vercel.app/users");
         setUserData(user_data.data.Data);
     }
     useEffect(() => {

@@ -30,7 +30,7 @@ export const DashBoard = () => {
   }
   const handleRenewalConfirm = async(renewalData)=>{
     try{
-      const response=await axios.put(`http://127.0.0.1:8000/users/${selectedUser.id}/renew`,renewalData);
+      const response=await axios.put(`https://beast-force-backend.vercel.app/users/${selectedUser.id}/renew`,renewalData);
       get_data_api(forexpiringbtn);
       setShowRenewalCard(false);
       setSelectedUser(null);
@@ -43,7 +43,7 @@ export const DashBoard = () => {
 
   const get_data_api = async (type) => {
     try {
-      const url = (type === "Expired") ? "http://127.0.0.1:8000/users/expired" : "http://127.0.0.1:8000/users/expiring"
+      const url = (type === "Expired") ? "https://beast-force-backend.vercel.app/users/expired" : "https://beast-force-backend.vercel.app/users/expiring"
       const user_data = await axios.get(url);
       setTableData(user_data.data.Data);
     }

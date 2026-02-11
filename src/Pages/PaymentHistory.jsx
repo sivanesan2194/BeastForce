@@ -12,7 +12,7 @@ export const PaymentHistory = () => {
     const [tableData, setTableData] = useState([]);
 
     const get_data_api = async () => {
-        const user_data = await axios.get("http://127.0.0.1:8000/users");
+        const user_data = await axios.get("https://beast-force-backend.vercel.app/users");
         setTableData(user_data.data.Data);
         // console.log(user_data.data.Data);
     }
