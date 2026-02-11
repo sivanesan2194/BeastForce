@@ -47,7 +47,7 @@ export const Table = ({ triggerRenewal, tableData }) => {
                 <tr key={row.id} onClick={()=>{(location.pathname == "/content/viewregister") && navigate(`/content/viewregister/${row.id}`)}}>
                   <td>{index + 1}</td>
                   <td>
-                    <img src={row.profile} alt="Profile" />
+                    <img src={profile} alt="Profile" />
                   </td>
                   <td>{row.name}</td>
                   {(location.pathname === "/content/viewregister") && <td>{row.age}</td>}
